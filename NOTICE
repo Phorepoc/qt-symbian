@@ -15,7 +15,8 @@ installed with the Qt package). Qt Mobility 1.2 is LGPL-2.1 with the same except
 tree keep the licences named in its sources.
 
 The Qt libraries are dynamic libraries, so a modified Qt 4.8 of the same ABI can replace them and applications keep working.
-The packages are installed through the Catalogue, one SIS each ("Qt", "QtMobility"); no Phorepoc image carries them. Each
-SIS installs LICENSE.LGPL and the source offer (SOURCE-OFFER.txt in this repository is the same text) in \resource\<package>\.
+The packages are installed through the Catalogue, one SIS each ("Qt"; "QtMobility" once released); no Phorepoc image
+carries them. Each SIS installs LICENSE.LGPL and the source offer (SOURCE-OFFER.txt in this repository is the same text) in
+\resource\<package>\.
 
 Qt is a registered trademark of The Qt Company Ltd and is used here only to name the software.

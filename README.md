@@ -3,10 +3,13 @@
 This is Qt 4.8.7 for Phorepoc OS, plus Qt Mobility 1.2: the libraries that Qt and Qt Quick apps for Symbian^3 link against. It
 exists so those apps keep running. Nothing in the system needs it.
 
-Qt is only ever a SIS you install through the Catalogue. No system image carries it. There is one SIS per package, built for
-ARM: `qt-symbian-arm.sis` is the "Qt" package (4.8.7, the identity an app's SIS depends on) and `qtmobility-symbian-arm.sis` is
-"QtMobility" (1.2.1, which needs Qt). Each installs the LGPL text, Qt's LGPL exception and the source offer in
-`\resource\<package>\`.
+Qt is only ever a SIS you install through the Catalogue. No system image carries it. The release has one SIS, built for
+ARM: `qt-symbian-arm.sis` is the "Qt" package (4.8.7, the identity an app's SIS depends on). It installs the LGPL text, Qt's
+LGPL exception and the source offer in `\resource\Qt\`.
+
+Qt Mobility 1.2 ("QtMobility", which needs Qt) is not released yet: some of its components link platform libraries that are
+not built yet (lbt, hwrmhapticsclient, the landmarks search libraries, ecamadvsettings, the character-set converters), and
+they would ship with those imports stubbed. It joins the release once they are built.
 
 This repository is the release: its workflow builds the packages and publishes them, and the Catalogue lists them. The build
 itself is core's (`os/tools/phorepoc-qt48/`: the fetch and configure recipes, our patches to Qt, and `registry/components_qt48.py`
@@ -21,7 +24,7 @@ Check out core, the [pdk](https://github.com/Phorepoc/pdk) and this repository s
 Then, in the toolchain's web image, with `PHOREPOC_QT48=1` set:
 
 ```sh
-bash recipes/prebuild.sh                       # fetch, patch and configure Qt and Qt Mobility
+bash recipes/prebuild.sh                       # fetch, patch and configure Qt
 phe component build -arch arm $(sed -n 's/^COMPONENTS_arm="\(.*\)"/\1/p' package.conf)
 bash recipes/sis.sh                            # the SIS files in $PHOREPOC_BUILD/sis/
 ```
