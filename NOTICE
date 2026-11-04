@@ -1,0 +1,21 @@
+qt-symbian: Qt 4.8.7 and Qt Mobility 1.2 for Phorepoc OS
+Copyright The Phorepoc Authors (see AUTHORS)
+
+Phorepoc was founded by Kyriakos Bompotis.
+
+Our files (recipes, package.conf, workflows) are licensed under the BSD 2-Clause License (LICENSE).
+
+Qt is not copied here, nor in core. Core's recipes (os/tools/phorepoc-qt48/) fetch the Qt 4.8.7 release tarball from
+download.qt.io, pinned by SHA-256, and our patches (os/tools/phorepoc-qt48/qt-patches/, under Qt's licence) edit that tree;
+Qt Mobility 1.2.0 is cloned from its upstream repository and checked against its pinned commit.
+
+Qt 4.8.7 is copyright The Qt Company / Digia / Nokia and the Qt contributors, licensed under the GNU Lesser General Public
+License version 2.1 (LICENSES/LGPL-2.1.txt) with the Qt LGPL Exception version 1.1 (LGPL_EXCEPTION.txt in the Qt source,
+installed with the Qt package). Qt Mobility 1.2 is LGPL-2.1 with the same exception. The other libraries bundled in the Qt
+tree keep the licences named in its sources.
+
+The Qt libraries are dynamic libraries, so a modified Qt 4.8 of the same ABI can replace them and applications keep working.
+The packages are installed through the Catalogue, one SIS each ("Qt", "QtMobility"); no Phorepoc image carries them. Each
+SIS installs LICENSE.LGPL and the source offer (SOURCE-OFFER.txt in this repository is the same text) in \resource\<package>\.
+
+Qt is a registered trademark of The Qt Company Ltd and is used here only to name the software.
