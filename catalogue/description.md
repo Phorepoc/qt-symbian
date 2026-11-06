@@ -1,6 +1,6 @@
 > Qt is an application development framework based on C++.
 >
-> -- [Qt 4.8 documentation](https://doc.qt.io/archives/qt-4.8/how-to-learn-qt.html)
+> — [Qt 4.8 documentation](https://doc.qt.io/archives/qt-4.8/how-to-learn-qt.html)
 
 This package is Qt 4.8.7 for Phorepoc: QtCore, QtGui, QtNetwork (with SSL), QtSvg, QtXml, QtSql, QtScript,
 QtDeclarative (Qt Quick 1), QtMultimedia, QtOpenGL, QtOpenVG, QtXmlPatterns, phonon, QtTest and Qt's plug-ins. Qt and
