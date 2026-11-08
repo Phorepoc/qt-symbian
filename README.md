@@ -3,8 +3,8 @@
 This is Qt 4.8.7 for Phorepoc OS, plus Qt Mobility 1.2: the libraries that Qt and Qt Quick apps for Symbian^3 link against. It
 exists so those apps keep running. Nothing in the system needs it.
 
-Qt is only ever a SIS you install through the Catalogue. No system image carries it. The release has one SIS, built for
-ARM: `qt-symbian-arm.sis` is the "Qt" package (4.8.7, the identity an app's SIS depends on). It installs the LGPL text, Qt's
+Qt is only ever a SIS you install through the Catalogue. No system image carries it. The release has one SIS per architecture, ARM (phones) and x32 (the PC image: Core, Gui, Network, Svg, Xml, Sql);
+each `qt-symbian-<arch>.sis` is the "Qt" package (4.8.7, the identity an app's SIS depends on). It installs the LGPL text, Qt's
 LGPL exception and the source offer in `\resource\Qt\`.
 
 Qt Mobility 1.2 ("QtMobility", which needs Qt) is not released yet: some of its components link platform libraries that are
