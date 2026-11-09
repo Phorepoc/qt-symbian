@@ -10,3 +10,6 @@ set -eu
 QT="${PHOREPOC_OS_ROOT:?}/tools/phorepoc-qt48"
 export PHOREPOC_QT48=1 JOBS=${JOBS:-$(nproc)}
 bash "$QT/build_qt_sis.sh" fetch host configure configure_full mocables stage
+# Qt Mobility 1.2: the upstream tag (its commit checked) and qmake's generated project files (the x32 components of package.conf
+# build from them; the same tree the ARM package is built from)
+bash "$QT/build_qtmobility_sis.sh" fetch configure
