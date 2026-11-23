@@ -12,7 +12,7 @@ not built yet (lbt, hwrmhapticsclient, the landmarks search libraries, ecamadvse
 they would ship with those imports stubbed. It joins the release once they are built.
 
 This repository is the release: its workflow builds the packages and publishes them, and the Catalogue lists them. The build
-itself is core's (`os/tools/phorepoc-qt48/`: the fetch and configure recipes, our patches to Qt, and `registry/components_qt48.py`
+itself is core's (`os/tools/phorepoc-qt48/`: the fetch and configure recipes, Phorepoc's patches to Qt, and `registry/components_qt48.py`
 for every Qt DLL and plug-in); `recipes/` here runs it. No copy of Qt is kept anywhere: the recipes download the Qt 4.8.7 tarball
 and check its SHA-256, and clone Qt Mobility and check its commit.
 
