@@ -31,7 +31,5 @@ bash recipes/sis.sh                            # the SIS files in $PHOREPOC_BUIL
 
 ## License
 
-Our files are BSD-2-Clause. Qt and Qt Mobility are LGPL-2.1 with the Qt LGPL Exception 1.1, which is why they are kept in their
-own libraries you can replace. `NOTICE` has the details.
-
-Contributions are welcome under the same terms. Add your name to `AUTHORS` in your first pull request.
+This repository is under Qt's licence: LGPL-2.1-only with the Qt LGPL Exception 1.1 (`LICENSE`), as port work on Qt and Qt Mobility, which are kept in their own libraries you can replace. `NOTICE` has the details.
+Files adapted from other projects keep their authors' copyright (see `AUTHORS` and `NOTICE`). Contributions are under the same terms. Add your name to `AUTHORS` in your first pull request.

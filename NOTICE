@@ -3,7 +3,7 @@ Copyright The Phorepoc Authors (see AUTHORS)
 
 Phorepoc was founded by Kyriakos Bompotis.
 
-Our files (recipes, package.conf, workflows) are licensed under the BSD 2-Clause License (LICENSE).
+This repository (recipes, package.conf, workflows) is under Qt's licence: GNU Lesser General Public License 2.1 with the Qt LGPL Exception 1.1 (LICENSE).
 
 Qt is not copied here, nor in core. Core's recipes (os/tools/phorepoc-qt48/) fetch the Qt 4.8.7 release tarball from
 download.qt.io, pinned by SHA-256, and our patches (os/tools/phorepoc-qt48/qt-patches/, under Qt's licence) edit that tree;

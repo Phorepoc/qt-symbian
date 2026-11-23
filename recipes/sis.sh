@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Copyright The Phorepoc Authors
-# SPDX-License-Identifier: BSD-2-Clause
+# SPDX-License-Identifier: LGPL-2.1-only WITH Qt-LGPL-exception-1.1
 #
 # sis.sh -- the pdk's package.yml runs it after the components: the SIS files in $PHOREPOC_BUILD/sis/
 #   qt-symbian-arm.sis          package "Qt" 4.8.7 (uid 0x2001E61C), the identity a Qt app's SIS depends on

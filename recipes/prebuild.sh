@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Copyright The Phorepoc Authors
-# SPDX-License-Identifier: BSD-2-Clause
+# SPDX-License-Identifier: LGPL-2.1-only WITH Qt-LGPL-exception-1.1
 #
 # prebuild.sh -- the pdk's package.yml runs it in the toolchain container before the components: core's Qt 4.8.7 recipe
 # (os/tools/phorepoc-qt48/build_qt_sis.sh: the source fetched and SHA-256 checked, the host tools, qmake's generated
